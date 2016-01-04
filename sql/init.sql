@@ -35,9 +35,11 @@ COMMENT = 'Glue record. data_type is a string used in a source table. table name
 
 create table `peaks` (
 	peak_id		bigint unsigned not NULL auto_increment,	
-        elevation_ft    varchar(15) not NULL,
+        pin_id		bigint unsigned not NULL,
+	elevation_ft    varchar(15) not NULL,
         elevation_m     varchar(15),
-	prominance	varchar(15),
+	state		varchar(30),
+	prominence	varchar(15),
 	col		varchar(15),
 	primary key 	(peak_id)
 ) engine=MyISAM
@@ -70,3 +72,16 @@ create table `list_permission` (
 	primary key 	(list_permission_id)
 ) engine=MyISAM
 COMMENT = 'grants non creator users permission to see lists';
+
+create table `list_entry` (
+	entry_id	bigint unsigned not NULL auto_increment,
+	pin_id		bigint unsigned not NULL,
+	user_id		bigint unsigned not NULL,
+	pin_date	varchar(30),
+	list_entry_date	datetime,
+	primary key	(entry_id)
+) engine=MyISAM
+COMMENT = 'Actual user entry for pin';
+
+	
+
