@@ -1,8 +1,6 @@
 #Some SQL examples, this is a reference piece.
-#I imagine this will grow, but will be pulled after tagging.
 
-select pin.name as Peak, l.name as List
-from pins pin 
-inner join list_linker ll on pin.pin_id = ll.pin_id
-inner join list l on ll.list_id = l.list_id
-where l.list_id=1;
+select peak.name, list.name from peak
+left join list_linker on peak.peak_id = list_linker.peak_id
+left join list on list_linker.list_id = list.list_id
+where list.name = "New England 3000 Footers"

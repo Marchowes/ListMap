@@ -1,2 +1,2 @@
 # ListMap
-A list based pin map website
+A list based hiking pin API and database.
