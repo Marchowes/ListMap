@@ -1,0 +1,3 @@
+package: github.com/Marchowes/ListMap
+import:
+- package: github.com/gin-gonic/gin

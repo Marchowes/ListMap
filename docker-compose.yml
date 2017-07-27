@@ -1,0 +1,9 @@
+version: '2'
+services:
+  # Install vendor dependencies
+  vendor:
+    image: rest4hub/golang-glide
+    volumes:
+      - ./:/go/src/github.com/Marchowes/ListMap
+    working_dir: /go/src/github.com/Marchowes/ListMap
+    command: glide install
