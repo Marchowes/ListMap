@@ -1,6 +1,88 @@
 imports:
 - name: github.com/gin-gonic/gin
-  version: d459835d2b077e44f7c9b453505ee29881d5d12d
+  version: 3856206bd07d1a5627eb951e345fff25f9b6209c
   subpackages:
   - binding
   - render
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/golang/protobuf
+  version: ab9f9a6dab164b7d1246e0e688b0ab7b94d8553e
+  subpackages:
+  - proto
+- name: github.com/mattn/go-isatty
+  version: fc9e8d8ef48496124e79ae0df75490096eccf6fe
+- name: github.com/ugorji/go/
+  version: 5efa3251c7f7d05e5d9704a69a984ec9f1386a40
+  subpackages:
+  - codec
+- name: gopkg.in/go-playground/validator.v8
+  version: c193cecd124b5cc722d7ee5538e945bdb3348435
+
+#### All of this, just to support viper and cobra.
+- name: github.com/spf13/viper
+  version: 7fb2782df3d83e0036cc89f461ed0422628776f4
+- name: github.com/spf13/cobra
+  version: 9c28e4bbd74e5c3ed7aacbc552b2cab7cfdfe744
+- name: gopkg.in/yaml.v2
+  version: e4d366fc3c7938e2958e662b4258c7a89e1f0e3e
+- name: github.com/spf13/pflag
+  version: 103ce5cd2042f2fe629c1957abb64ab3e7f50235
+- name: github.com/fsnotify/fsnotify
+  version: f12c6236fe7b5cf6bcf30e5935d08cb079d78334
+- name: github.com/spf13/jwalterweatherman
+  version: 33c24e77fb80341fe7130ee7c594256ff08ccc46
+- name: github.com/spf13/cast
+  version: e31f36ffc91a2ba9ddb72a4b6a607ff9b3d3cb63
+- name: golang.org/x/sys
+  version: a646d33e2ee3172a661fc09bca23bb4889a41bc8
+  subpackages:
+  - unix
+- name: github.com/spf13/afero
+  version: 20500e2abd0d1f4564a499e83d11d6c73cd58c27
+  subpackages:
+  - mem
+  - sftp
+- name: github.com/pelletier/go-toml
+  version: 5a62685873ef617233ab5f1b825a6e4a758e16cf
+- name: golang.org/x/text
+  version: d69c40b4be55797923cec7457fac7a244d91a9b6
+  subpackages:
+  - transform
+  - unicode/norm
+- name: github.com/pkg/sftp
+  version: a71e8f580e3b622ebff585309160b1cc549ef4d2
+- name: github.com/pelletier/go-buffruneio
+  version: df1e16fde7fc330a0ca68167c23bf7ed6ac31d6d
+- name: github.com/mitchellh/mapstructure
+  version: ca63d7c062ee3c9f34db231e352b60012b4fd0c1
+- name: golang.org/x/crypto
+  version: 459e26527287adbc2adcc5d0d49abff9a5f315a7
+  subpackages:
+  - curve25519
+  - ed25519
+  - ed25519/internal/edwards25519
+  - ssh
+- name: github.com/pkg/errors
+  version: 17b591df37844cde689f4d5813e5cea0927d8dd2
+- name: github.com/magiconair/properties
+  version: 61b492c03cf472e0c6419be5899b8e0dc28b1b88
+- name: github.com/hashicorp/hcl
+  version: baeb59c710717b06aac1dbe2270e8192ec593244
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/kr/fs
+  version: 2788f0dbd16903de03cb8186e5c7d97b69ad387b
+#####
+
+- name: github.com/jmoiron/sqlx
+  version: 7396209bbeada6a4fcc28aa9408f89b2e71cac39
+  subpackages:
+  - reflectx
