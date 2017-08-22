@@ -1,3 +1,9 @@
 package: github.com/Marchowes/ListMap
 import:
 - package: github.com/gin-gonic/gin
+- package: github.com/spf13/viper
+- package: github.com/spf13/cobra
+- package: gopkg.in/yaml.v2
+- package: github.com/spf13/pflag
+- package: github.com/fsnotify/fsnotify
+- package: github.com/jmoiron/sqlx
