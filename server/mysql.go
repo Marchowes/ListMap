@@ -4,12 +4,11 @@ import (
 	"time"
 
 	"github.com/Marchowes/ListMap/dbmysql"
-	"github.com/jmoiron/sqlx"
 	"github.com/spf13/viper"
 )
 
 // MySQLConnect connects to the MySQL Database and returns a client.
-func MySQLConnect() *sqlx.DB {
+func MySQLConnect() *dbmysql.MySQLClient {
 	readTimeout, err := time.ParseDuration(viper.GetString("mysql.readtimeout"))
 	if err != nil {
 		panic(err.Error())

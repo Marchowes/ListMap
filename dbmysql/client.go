@@ -12,8 +12,13 @@ const (
 	maxOpenConnections = 20
 )
 
+// MySQLClient struct.
+type MySQLClient struct {
+	db *sqlx.DB
+}
+
 // NewMySQLClient returns a mysql client
-func NewMySQLClient(user, pass, host, name string, readTimeout time.Duration) (*sqlx.DB, error) {
+func NewMySQLClient(user, pass, host, name string, readTimeout time.Duration) (*MySQLClient, error) {
 	connectionConfig := mysql.Config{User: user,
 		Passwd:          pass,
 		Net:             "tcp",
@@ -29,5 +34,6 @@ func NewMySQLClient(user, pass, host, name string, readTimeout time.Duration) (*
 	}
 	db.SetMaxIdleConns(maxIdleConnections)
 	db.SetMaxOpenConns(maxOpenConnections)
-	return db, nil
+
+	return &MySQLClient{db: db}, nil
 }
