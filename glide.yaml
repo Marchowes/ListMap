@@ -7,3 +7,6 @@ import:
 - package: github.com/spf13/pflag
 - package: github.com/fsnotify/fsnotify
 - package: github.com/jmoiron/sqlx
+- package: github.com/Sirupsen/logrus
+- package: github.com/dyninc/qstring
+- package: github.com/moogar0880/problems

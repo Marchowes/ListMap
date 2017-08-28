@@ -86,3 +86,14 @@ imports:
   version: 7396209bbeada6a4fcc28aa9408f89b2e71cac39
   subpackages:
   - reflectx
+
+- name: github.com/Sirupsen/logrus
+  version: 3d4380f53a34dcdc95f0c1db702615992b38d9a4
+  repo: https://github.com/Sirupsen/logrus.git
+  vcs: git
+
+- name: github.com/dyninc/qstring
+  version: ab5840a88e818d51076cb7e9708e7cb7ff125a27
+
+- name: github.com/moogar0880/problems
+  version: 33afcba6336a8edeaa9ceeef7659ed96a85016f2
